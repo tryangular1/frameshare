@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .iframe-wrapper-draw {
+             height: 600px;
+            width: 960px;
+        }
+
+        .iframe-wrapper-call {
+            height: 600px;
+            width: 250px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="iframe-wrapper-call">
+            <iframe
+                title="100ms-app"
+                allow="camera *;microphone *;display-capture *"
+                src="https://stephan-videoconf-852.app.100ms.live/meeting/ehc-crec-kof">
+            </iframe>
+        </div>
+        <div class="iframe-wrapper-draw">
+            <iframe 
+                src="https://tryangular1.github.io/draw0" 
+                name="myiFrame" 
+                scrolling="no" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
